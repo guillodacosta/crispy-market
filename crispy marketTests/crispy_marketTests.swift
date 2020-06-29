@@ -1,15 +1,15 @@
 //
-//  Crispy_MarketTests.swift
-//  Crispy MarketTests
+//  crispy_marketTests.swift
+//  crispy marketTests
 //
 //  Created by guillermo on 6/28/20.
 //  Copyright © 2020 guillodacosta. All rights reserved.
 //
 
 import XCTest
-@testable import Crispy_Market
+@testable import crispy_market
 
-class Crispy_MarketTests: XCTestCase {
+class crispy_marketTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

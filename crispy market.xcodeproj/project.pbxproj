@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D718453324A9673D000BD213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718453224A9673D000BD213 /* AppDelegate.swift */; };
+		D718453724A9673D000BD213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718453624A9673D000BD213 /* ViewController.swift */; };
+		D718453A24A9673D000BD213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D718453824A9673D000BD213 /* Main.storyboard */; };
+		D718453D24A9673D000BD213 /* crispy_market.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D718453B24A9673D000BD213 /* crispy_market.xcdatamodeld */; };
+		D718453F24A9673E000BD213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D718453E24A9673E000BD213 /* Assets.xcassets */; };
+		D718454224A9673E000BD213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D718454024A9673E000BD213 /* LaunchScreen.storyboard */; };
+		D718454D24A9673E000BD213 /* crispy_marketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718454C24A9673E000BD213 /* crispy_marketTests.swift */; };
+		D718455824A9673E000BD213 /* crispy_marketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718455724A9673E000BD213 /* crispy_marketUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D718454924A9673E000BD213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D718452724A9673D000BD213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D718452E24A9673D000BD213;
+			remoteInfo = "crispy market";
+		};
+		D718455424A9673E000BD213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D718452724A9673D000BD213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D718452E24A9673D000BD213;
+			remoteInfo = "crispy market";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D718452F24A9673D000BD213 /* crispy market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crispy market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D718453224A9673D000BD213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D718453624A9673D000BD213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D718453924A9673D000BD213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D718453C24A9673D000BD213 /* crispy_market.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = crispy_market.xcdatamodel; sourceTree = "<group>"; };
+		D718453E24A9673E000BD213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D718454124A9673E000BD213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D718454324A9673E000BD213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D718454824A9673E000BD213 /* crispy marketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crispy marketTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D718454C24A9673E000BD213 /* crispy_marketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crispy_marketTests.swift; sourceTree = "<group>"; };
+		D718454E24A9673E000BD213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D718455324A9673E000BD213 /* crispy marketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crispy marketUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D718455724A9673E000BD213 /* crispy_marketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crispy_marketUITests.swift; sourceTree = "<group>"; };
+		D718455924A9673E000BD213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D718452C24A9673D000BD213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D718454524A9673E000BD213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D718455024A9673E000BD213 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D718452624A9673D000BD213 = {
+			isa = PBXGroup;
+			children = (
+				D718453124A9673D000BD213 /* crispy market */,
+				D718454B24A9673E000BD213 /* crispy marketTests */,
+				D718455624A9673E000BD213 /* crispy marketUITests */,
+				D718453024A9673D000BD213 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D718453024A9673D000BD213 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D718452F24A9673D000BD213 /* crispy market.app */,
+				D718454824A9673E000BD213 /* crispy marketTests.xctest */,
+				D718455324A9673E000BD213 /* crispy marketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D718453124A9673D000BD213 /* crispy market */ = {
+			isa = PBXGroup;
+			children = (
+				D718453224A9673D000BD213 /* AppDelegate.swift */,
+				D718453624A9673D000BD213 /* ViewController.swift */,
+				D718453824A9673D000BD213 /* Main.storyboard */,
+				D718453E24A9673E000BD213 /* Assets.xcassets */,
+				D718454024A9673E000BD213 /* LaunchScreen.storyboard */,
+				D718454324A9673E000BD213 /* Info.plist */,
+				D718453B24A9673D000BD213 /* crispy_market.xcdatamodeld */,
+			);
+			path = "crispy market";
+			sourceTree = "<group>";
+		};
+		D718454B24A9673E000BD213 /* crispy marketTests */ = {
+			isa = PBXGroup;
+			children = (
+				D718454C24A9673E000BD213 /* crispy_marketTests.swift */,
+				D718454E24A9673E000BD213 /* Info.plist */,
+			);
+			path = "crispy marketTests";
+			sourceTree = "<group>";
+		};
+		D718455624A9673E000BD213 /* crispy marketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D718455724A9673E000BD213 /* crispy_marketUITests.swift */,
+				D718455924A9673E000BD213 /* Info.plist */,
+			);
+			path = "crispy marketUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D718452E24A9673D000BD213 /* crispy market */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D718455C24A9673E000BD213 /* Build configuration list for PBXNativeTarget "crispy market" */;
+			buildPhases = (
+				D718452B24A9673D000BD213 /* Sources */,
+				D718452C24A9673D000BD213 /* Frameworks */,
+				D718452D24A9673D000BD213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "crispy market";
+			productName = "crispy market";
+			productReference = D718452F24A9673D000BD213 /* crispy market.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D718454724A9673E000BD213 /* crispy marketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D718455F24A9673E000BD213 /* Build configuration list for PBXNativeTarget "crispy marketTests" */;
+			buildPhases = (
+				D718454424A9673E000BD213 /* Sources */,
+				D718454524A9673E000BD213 /* Frameworks */,
+				D718454624A9673E000BD213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D718454A24A9673E000BD213 /* PBXTargetDependency */,
+			);
+			name = "crispy marketTests";
+			productName = "crispy marketTests";
+			productReference = D718454824A9673E000BD213 /* crispy marketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D718455224A9673E000BD213 /* crispy marketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D718456224A9673E000BD213 /* Build configuration list for PBXNativeTarget "crispy marketUITests" */;
+			buildPhases = (
+				D718454F24A9673E000BD213 /* Sources */,
+				D718455024A9673E000BD213 /* Frameworks */,
+				D718455124A9673E000BD213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D718455524A9673E000BD213 /* PBXTargetDependency */,
+			);
+			name = "crispy marketUITests";
+			productName = "crispy marketUITests";
+			productReference = D718455324A9673E000BD213 /* crispy marketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D718452724A9673D000BD213 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = guillodacosta;
+				TargetAttributes = {
+					D718452E24A9673D000BD213 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					D718454724A9673E000BD213 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = D718452E24A9673D000BD213;
+					};
+					D718455224A9673E000BD213 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = D718452E24A9673D000BD213;
+					};
+				};
+			};
+			buildConfigurationList = D718452A24A9673D000BD213 /* Build configuration list for PBXProject "crispy market" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D718452624A9673D000BD213;
+			productRefGroup = D718453024A9673D000BD213 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D718452E24A9673D000BD213 /* crispy market */,
+				D718454724A9673E000BD213 /* crispy marketTests */,
+				D718455224A9673E000BD213 /* crispy marketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D718452D24A9673D000BD213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D718454224A9673E000BD213 /* LaunchScreen.storyboard in Resources */,
+				D718453F24A9673E000BD213 /* Assets.xcassets in Resources */,
+				D718453A24A9673D000BD213 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D718454624A9673E000BD213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D718455124A9673E000BD213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D718452B24A9673D000BD213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D718453724A9673D000BD213 /* ViewController.swift in Sources */,
+				D718453324A9673D000BD213 /* AppDelegate.swift in Sources */,
+				D718453D24A9673D000BD213 /* crispy_market.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D718454424A9673E000BD213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D718454D24A9673E000BD213 /* crispy_marketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D718454F24A9673E000BD213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D718455824A9673E000BD213 /* crispy_marketUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D718454A24A9673E000BD213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D718452E24A9673D000BD213 /* crispy market */;
+			targetProxy = D718454924A9673E000BD213 /* PBXContainerItemProxy */;
+		};
+		D718455524A9673E000BD213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D718452E24A9673D000BD213 /* crispy market */;
+			targetProxy = D718455424A9673E000BD213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D718453824A9673D000BD213 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D718453924A9673D000BD213 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D718454024A9673E000BD213 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D718454124A9673E000BD213 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D718455A24A9673E000BD213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D718455B24A9673E000BD213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D718455D24A9673E000BD213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crispy market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-market";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D718455E24A9673E000BD213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crispy market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-market";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D718456024A9673E000BD213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crispy marketTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-marketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crispy market.app/crispy market";
+			};
+			name = Debug;
+		};
+		D718456124A9673E000BD213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crispy marketTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-marketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crispy market.app/crispy market";
+			};
+			name = Release;
+		};
+		D718456324A9673E000BD213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crispy marketUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-marketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "crispy market";
+			};
+			name = Debug;
+		};
+		D718456424A9673E000BD213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crispy marketUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-marketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "crispy market";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D718452A24A9673D000BD213 /* Build configuration list for PBXProject "crispy market" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D718455A24A9673E000BD213 /* Debug */,
+				D718455B24A9673E000BD213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D718455C24A9673E000BD213 /* Build configuration list for PBXNativeTarget "crispy market" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D718455D24A9673E000BD213 /* Debug */,
+				D718455E24A9673E000BD213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D718455F24A9673E000BD213 /* Build configuration list for PBXNativeTarget "crispy marketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D718456024A9673E000BD213 /* Debug */,
+				D718456124A9673E000BD213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D718456224A9673E000BD213 /* Build configuration list for PBXNativeTarget "crispy marketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D718456324A9673E000BD213 /* Debug */,
+				D718456424A9673E000BD213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D718453B24A9673D000BD213 /* crispy_market.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D718453C24A9673D000BD213 /* crispy_market.xcdatamodel */,
+			);
+			currentVersion = D718453C24A9673D000BD213 /* crispy_market.xcdatamodel */;
+			path = crispy_market.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D718452724A9673D000BD213 /* Project object */;
+}
