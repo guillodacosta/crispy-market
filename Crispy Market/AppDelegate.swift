@@ -11,9 +11,22 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    private let theme = MarketTheme()
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        chooseRootController()
+        
+        return true
+    }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        theme.apply(for: application)
+        
         return true
     }
 
@@ -62,5 +75,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+    private func chooseRootController() {
+        let marketStore = SelectCountriesWorker(store: MarketDataStore())
+        
+        marketStore.retrieveUserCountry(completionHandler: { country, err in
+            let rootController: UIViewController
+            
+            if country != nil {
+                rootController = SearchViewController()
+            } else {
+                rootController = SelectCountriesViewController()
+            }
+            
+            let navController = UINavigationController(rootViewController: rootController)
+            
+            navController.navigationBar.isHidden = true
+            self.window?.rootViewController = navController
+            self.window?.makeKeyAndVisible()
+        })
+    }
 }
-
