@@ -37,6 +37,10 @@
 		D772503424AD609800389097 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D772503124AD609800389097 /* Lato-Bold.ttf */; };
 		D772503524AD609800389097 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D772503224AD609800389097 /* Lato-Regular.ttf */; };
 		D772503624AD609800389097 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D772503324AD609800389097 /* Lato-Light.ttf */; };
+		D772503A24AD63B900389097 /* SelectCountryRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772503924AD63B900389097 /* SelectCountryRobot.swift */; };
+		D772503D24AD640300389097 /* CountriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772503C24AD640300389097 /* CountriesViewControllerTests.swift */; };
+		D772504424AD7A2600389097 /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772504324AD7A2600389097 /* SearchViewControllerTests.swift */; };
+		D772504624AD7AA200389097 /* SearchRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D772504524AD7AA200389097 /* SearchRobot.swift */; };
 		D7EA9C4424AC5F5F0030EC23 /* ItemEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EA9C4324AC5F5F0030EC23 /* ItemEmptyCell.swift */; };
 		D7EA9C4724AC652D0030EC23 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EA9C4624AC652D0030EC23 /* ItemDetailViewController.swift */; };
 		D7EA9C4924AC68B50030EC23 /* ItemDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EA9C4824AC68B50030EC23 /* ItemDetailInteractor.swift */; };
@@ -105,6 +109,10 @@
 		D772503124AD609800389097 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		D772503224AD609800389097 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		D772503324AD609800389097 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		D772503924AD63B900389097 /* SelectCountryRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountryRobot.swift; sourceTree = "<group>"; };
+		D772503C24AD640300389097 /* CountriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewControllerTests.swift; sourceTree = "<group>"; };
+		D772504324AD7A2600389097 /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
+		D772504524AD7AA200389097 /* SearchRobot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRobot.swift; sourceTree = "<group>"; };
 		D7B8E84324A98467001D92AE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D7B8E84524A9846F001D92AE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		D7EA9C4324AC5F5F0030EC23 /* ItemEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEmptyCell.swift; sourceTree = "<group>"; };
@@ -201,6 +209,8 @@
 		D718455624A9673E000BD213 /* crispy marketUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D772503824AD638D00389097 /* Robots */,
+				D772503724AD638800389097 /* Scenes */,
 				D718455724A9673E000BD213 /* crispy_marketUITests.swift */,
 				D718455924A9673E000BD213 /* Info.plist */,
 			);
@@ -252,6 +262,40 @@
 				D767AD6524ABF2CF0074175F /* MarketUserDefaults.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		D772503724AD638800389097 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D772504224AD7A0600389097 /* Search */,
+				D772503B24AD63DE00389097 /* SelectCountry */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D772503824AD638D00389097 /* Robots */ = {
+			isa = PBXGroup;
+			children = (
+				D772503924AD63B900389097 /* SelectCountryRobot.swift */,
+				D772504524AD7AA200389097 /* SearchRobot.swift */,
+			);
+			path = Robots;
+			sourceTree = "<group>";
+		};
+		D772503B24AD63DE00389097 /* SelectCountry */ = {
+			isa = PBXGroup;
+			children = (
+				D772503C24AD640300389097 /* CountriesViewControllerTests.swift */,
+			);
+			path = SelectCountry;
+			sourceTree = "<group>";
+		};
+		D772504224AD7A0600389097 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D772504324AD7A2600389097 /* SearchViewControllerTests.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		D7B8E83A24A983E1001D92AE /* fonts */ = {
@@ -505,7 +549,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D772504624AD7AA200389097 /* SearchRobot.swift in Sources */,
 				D718455824A9673E000BD213 /* crispy_marketUITests.swift in Sources */,
+				D772503A24AD63B900389097 /* SelectCountryRobot.swift in Sources */,
+				D772504424AD7A2600389097 /* SearchViewControllerTests.swift in Sources */,
+				D772503D24AD640300389097 /* CountriesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +793,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-marketUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "crispy market";
@@ -764,6 +813,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "guillodacosta.crispy-marketUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "crispy market";
