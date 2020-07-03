@@ -9,7 +9,14 @@
 import Foundation
 import Alamofire
 
-public class MarketAPI {}
+public class MarketAPI {
+    
+    let apiLog: MarketLogAPI
+    
+    init(apiLog: MarketLogAPI) {
+        self.apiLog = apiLog
+    }
+}
 
 extension MarketAPI: SearchProtocol {
     func fetchItems(request: Items.FetchItems.Request, completionHandler: @escaping (Items.FetchItems.Response?, SearchError?) -> Void) {
@@ -28,6 +35,7 @@ extension MarketAPI: SearchProtocol {
                             let items = try JSONDecoder().decode(Items.FetchItems.Response.self, from: data)
                             completionHandler(items, nil)
                         } catch {
+                            self.apiLog.error(error: error)
                             completionHandler(nil, SearchError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorParseData", comment: "error api message")))
                         }
                     } else {
@@ -35,7 +43,7 @@ extension MarketAPI: SearchProtocol {
                     }
                     break
                 case .failure(let error as NSError):
-                    debugPrint(error.localizedDescription)
+                    self.apiLog.debug(message: error.localizedDescription)
                     completionHandler(nil, SearchError.CannotFetch(error.localizedDescription))
                     break
                 }
@@ -56,6 +64,7 @@ extension MarketAPI: SelectCountriesProtocol {
                         let countries = try JSONDecoder().decode([SelectCountries.FetchCountries.Response].self, from: data)
                         completionHandler(countries, nil)
                     } catch {
+                        self.apiLog.error(error: error)
                         completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorParseData", comment: "error api message")))
                     }
                 } else {
@@ -63,7 +72,7 @@ extension MarketAPI: SelectCountriesProtocol {
                 }
                 break
             case .failure(let error as NSError):
-                debugPrint(error.localizedDescription)
+                self.apiLog.debug(message: error.localizedDescription)
                 completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorParseData", comment: "error api message")))
                 break
             }

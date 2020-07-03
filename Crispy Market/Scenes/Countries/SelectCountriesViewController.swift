@@ -78,9 +78,10 @@ private extension SelectCountriesViewController {
     }
     
     func setUpInjection() {
+        let logApi = MarketLogAPI(debugging: BuildType.isDebug(), logCrash: nil)
         let presenter = SelectCountriesPresenter(with: self)
         let marketDataStore = SelectCountriesWorker(store: MarketDataStore())
-        let marketApiworker = SelectCountriesWorker(store: MarketAPI())
+        let marketApiworker = SelectCountriesWorker(store: MarketAPI(apiLog: logApi))
         let interactor = SelectCountriesInteractor(presenter: presenter, marketApiWorker: marketApiworker, marketCoreDataWorker: marketDataStore)
         let router = SelectCountriesRouter(source: self, dataStore: interactor)
         

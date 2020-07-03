@@ -132,9 +132,10 @@ private extension SearchViewController {
     }
     
     func setUpInjection() {
+        let logApi = MarketLogAPI(debugging: BuildType.isDebug(), logCrash: nil)
         let presenter = SearchPresenter(with: self)
         let countriesDataStore = SelectCountriesWorker(store: MarketDataStore())
-        let marketApiworker = SearchWorker(store: MarketAPI())
+        let marketApiworker = SearchWorker(store: MarketAPI(apiLog: logApi))
         let interactor = SearchInteractor(presenter: presenter, marketApiWorker: marketApiworker, countriesDataStore: countriesDataStore)
         let router = SearchRouter(source: self, dataStore: interactor)
         
