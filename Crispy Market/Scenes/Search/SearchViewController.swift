@@ -55,7 +55,7 @@ class SearchViewController: UIViewController, SearchDisplayLogic {
     func showError(message: String?) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
 
-        alertController.addAction(UIAlertAction(title: "Cerrar", style: .cancel))
+        alertController.addAction(UIAlertAction(title: NSLocalizedString("SearchSceneAlertCloseButton", comment: "close button title"), style: .cancel))
         
         present(alertController, animated: true)
     }

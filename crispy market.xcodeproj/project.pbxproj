@@ -15,6 +15,7 @@
 		D718454D24A9673E000BD213 /* crispy_marketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718454C24A9673E000BD213 /* crispy_marketTests.swift */; };
 		D718455824A9673E000BD213 /* crispy_marketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D718455724A9673E000BD213 /* crispy_marketUITests.swift */; };
 		D758EED624AA37C10047EC31 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758EED524AA37C10047EC31 /* SearchViewController.swift */; };
+		D75B762024AFD7C300E878AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D75B762224AFD7C300E878AB /* Localizable.strings */; };
 		D767AD4624AAEBDE0074175F /* ItemsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AD4524AAEBDE0074175F /* ItemsModels.swift */; };
 		D767AD4B24AAFA630074175F /* SelectCountriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AD4A24AAFA630074175F /* SelectCountriesModels.swift */; };
 		D767AD4D24AAFBF80074175F /* SelectCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AD4C24AAFBF80074175F /* SelectCountriesViewController.swift */; };
@@ -94,6 +95,9 @@
 		D718455724A9673E000BD213 /* crispy_marketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crispy_marketUITests.swift; sourceTree = "<group>"; };
 		D718455924A9673E000BD213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D758EED524AA37C10047EC31 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		D75B762124AFD7C300E878AB /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D75B762324AFD7C700E878AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D75B762424AFD7CA00E878AB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D767AD4524AAEBDE0074175F /* ItemsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModels.swift; sourceTree = "<group>"; };
 		D767AD4A24AAFA630074175F /* SelectCountriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountriesModels.swift; sourceTree = "<group>"; };
 		D767AD4C24AAFBF80074175F /* SelectCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountriesViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				D718454024A9673E000BD213 /* LaunchScreen.storyboard */,
 				D718454324A9673E000BD213 /* Info.plist */,
 				D718453B24A9673D000BD213 /* crispy_market.xcdatamodeld */,
+				D75B762224AFD7C300E878AB /* Localizable.strings */,
 			);
 			path = "crispy market";
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D772503624AD609800389097 /* Lato-Light.ttf in Resources */,
+				D75B762024AFD7C300E878AB /* Localizable.strings in Resources */,
 				D718454224A9673E000BD213 /* LaunchScreen.storyboard in Resources */,
 				D772503424AD609800389097 /* Lato-Bold.ttf in Resources */,
 				D718453F24A9673E000BD213 /* Assets.xcassets in Resources */,
@@ -608,6 +614,17 @@
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+		};
+		D75B762224AFD7C300E878AB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D75B762124AFD7C300E878AB /* es-419 */,
+				D75B762324AFD7C700E878AB /* en */,
+				D75B762424AFD7CA00E878AB /* pt-BR */,
+			);
+			name = Localizable.strings;
+			path = "Crispy Market";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 

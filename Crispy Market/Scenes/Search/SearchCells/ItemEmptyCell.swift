@@ -53,6 +53,6 @@ private extension ItemEmptyCell {
             thumbnail.image = image.withTint(color: #colorLiteral(red: 0.1568627451, green: 0.1960784314, blue: 0.4666666667, alpha: 1))
         }
         titleLabel.textAlignment = .center
-        titleLabel.text = "Andale a buscar!"// localized....
+        titleLabel.text = NSLocalizedString("SearchSceneEmptyTitle", comment: "empty state title")
     }
 }

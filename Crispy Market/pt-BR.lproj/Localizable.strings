@@ -1,0 +1,21 @@
+/*
+  Localizable.strings
+  crispy market
+
+  Created by guillermo on 7/3/20.
+  Copyright © 2020 guillodacosta. All rights reserved.
+*/
+
+// Market API local messages
+"MarketAPIFetchErrorParseData" = "Houston estamos com problemas!";
+"MarketAPIFetchErrorNoData" = "Houston não há nada aqui!";
+
+// Market local store messages
+"MarketLocalAPIErrorParseData" = "No se entiende que hay!";
+"MarketLocalAPIErrorNoData" = "Opa! Parece que nada foi salvo.";
+"MarketLocalAPIErrorCannotSave" = "Desculpe, mas agora não podemos salvá-lo.";
+
+// Search
+"SearchSceneEmptyTitle" = "Vá encontrá-lo!!";
+"SearchSceneErrorNoCountryOrigin" = "Parece que não está no país!";
+"SearchSceneAlertCloseButton" = "Fechar";

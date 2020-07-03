@@ -23,10 +23,10 @@ extension MarketDataStore: SelectCountriesProtocol {
                 let country = try JSONDecoder().decode(SelectCountries.SelectCountry.ViewModel.self, from: data)
                 completionHandler(country, nil)
             } else {
-                completionHandler(nil, SelectCountriesError.CannotFetch("No se entiende que hay!"))
+                completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketLocalAPIErrorParseData", comment: "error local API message")))
             }
         } catch {
-            completionHandler(nil, SelectCountriesError.CannotFetch("Parece que no tenemos nada guardado!"))
+            completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketLocalAPIErrorNoData", comment: "error local API message")))
         }
     }
     
@@ -37,7 +37,7 @@ extension MarketDataStore: SelectCountriesProtocol {
             completionHandler(country, nil)
         } catch {
             debugPrint(error)
-            completionHandler(nil, SelectCountriesError.CannotFetch("Parece que no podemos guardar!"))
+            completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketLocalAPIErrorCannotSave", comment: "error local API message")))
         }
     }
 }

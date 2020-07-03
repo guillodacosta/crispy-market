@@ -28,10 +28,10 @@ extension MarketAPI: SearchProtocol {
                             let items = try JSONDecoder().decode(Items.FetchItems.Response.self, from: data)
                             completionHandler(items, nil)
                         } catch {
-                            completionHandler(nil, SearchError.CannotFetch("Houston hay problemas!"))
+                            completionHandler(nil, SearchError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorParseData", comment: "error api message")))
                         }
                     } else {
-                        completionHandler(nil, SearchError.CannotFetch("Houston no hay nada!"))
+                        completionHandler(nil, SearchError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorNoData", comment: "error api message")))
                     }
                     break
                 case .failure(let error as NSError):
@@ -56,15 +56,15 @@ extension MarketAPI: SelectCountriesProtocol {
                         let countries = try JSONDecoder().decode([SelectCountries.FetchCountries.Response].self, from: data)
                         completionHandler(countries, nil)
                     } catch {
-                        completionHandler(nil, SelectCountriesError.CannotFetch("Houston hay problemas!"))
+                        completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorParseData", comment: "error api message")))
                     }
                 } else {
-                    completionHandler(nil, SelectCountriesError.CannotFetch("Houston no hay nada!"))
+                    completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorNoData", comment: "error api message")))
                 }
                 break
             case .failure(let error as NSError):
                 debugPrint(error.localizedDescription)
-                completionHandler(nil, SelectCountriesError.CannotFetch("Houston hay problemas!"))
+                completionHandler(nil, SelectCountriesError.CannotFetch(NSLocalizedString("MarketAPIFetchErrorParseData", comment: "error api message")))
                 break
             }
         }

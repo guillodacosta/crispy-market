@@ -6,6 +6,8 @@
 //  Copyright (c) 2020 guillodacosta. All rights reserved.
 //
 
+import Foundation
+
 protocol SearchBusinessLogic {
     func fetchItems(request: Items.FetchItems.Request)
     func selectItem(_: Items.FetchItems.SimpleViewModel)
@@ -49,7 +51,7 @@ class SearchInteractor: SearchBusinessLogic, SearchDataStore {
                 }
             }
         } else {
-            presenter.presentError(message: "Parece que no estás en ningún país!")
+            presenter.presentError(message: NSLocalizedString("SearchSceneErrorNoCountryOrigin", comment: " message error body"))
         }
     }
     
