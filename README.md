@@ -1,4 +1,4 @@
-# ![market logo](logo) crispy-market
+# crispy-market
 Free Market api tests
 
 - This project has the main intention to do basic tests over MercadoLibre API
@@ -38,5 +38,3 @@ Free Market api tests
 
 * [Mercado Libre API](https://developers.mercadolibre.com.ar/es_ar/categorias-y-publicaciones)
 * [Uncle Bob: Clean Architecture](https://www.amazon.com/-/es/Clean-Architecture-Craftsmans-Software-Structure-ebook-dp-B075LRM681/dp/B075LRM681/ref=mt_other?_encoding=UTF8&me=&qid=)
-
-[logo]: https://http2.mlstatic.com/frontend-assets/homes-palpatine/logo_homecom.png
