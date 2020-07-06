@@ -11,8 +11,7 @@ enum SelectCountries {
     
     enum FetchCountries {
         
-        struct Response: Codable, CVarArg {
-            var _cVarArgEncoding: [Int]
+        struct Response: Codable {
             
             let id: String
             let name: String
