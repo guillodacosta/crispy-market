@@ -18,6 +18,7 @@
 		D75B762024AFD7C300E878AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D75B762224AFD7C300E878AB /* Localizable.strings */; };
 		D75B762624AFDF7D00E878AB /* MarketLogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75B762524AFDF7D00E878AB /* MarketLogAPI.swift */; };
 		D75B762924AFE70C00E878AB /* BuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75B762824AFE70C00E878AB /* BuildType.swift */; };
+		D75B762D24B2B46B00E878AB /* SearchWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75B762C24B2B46B00E878AB /* SearchWorkerTests.swift */; };
 		D767AD4624AAEBDE0074175F /* ItemsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AD4524AAEBDE0074175F /* ItemsModels.swift */; };
 		D767AD4B24AAFA630074175F /* SelectCountriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AD4A24AAFA630074175F /* SelectCountriesModels.swift */; };
 		D767AD4D24AAFBF80074175F /* SelectCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767AD4C24AAFBF80074175F /* SelectCountriesViewController.swift */; };
@@ -102,6 +103,7 @@
 		D75B762424AFD7CA00E878AB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D75B762524AFDF7D00E878AB /* MarketLogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MarketLogAPI.swift; path = "Crispy Market/Services/MarketLogAPI.swift"; sourceTree = SOURCE_ROOT; };
 		D75B762824AFE70C00E878AB /* BuildType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BuildType.swift; path = "Crispy Market/Services/BuildType.swift"; sourceTree = SOURCE_ROOT; };
+		D75B762C24B2B46B00E878AB /* SearchWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorkerTests.swift; sourceTree = "<group>"; };
 		D767AD4524AAEBDE0074175F /* ItemsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModels.swift; sourceTree = "<group>"; };
 		D767AD4A24AAFA630074175F /* SelectCountriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountriesModels.swift; sourceTree = "<group>"; };
 		D767AD4C24AAFBF80074175F /* SelectCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCountriesViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		D718454B24A9673E000BD213 /* crispy marketTests */ = {
 			isa = PBXGroup;
 			children = (
+				D75B762A24B2B41700E878AB /* Scenes */,
 				D772505224ADA8C500389097 /* Services */,
 				D718454C24A9673E000BD213 /* crispy_marketTests.swift */,
 				D718454E24A9673E000BD213 /* Info.plist */,
@@ -255,6 +258,22 @@
 				D767AD6B24AC232E0074175F /* SearchPresenter.swift */,
 				D767AD6D24AC24990074175F /* SearchWorker.swift */,
 				D7EA9C4C24AC6B930030EC23 /* SearchRouter.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D75B762A24B2B41700E878AB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D75B762B24B2B42200E878AB /* Search */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D75B762B24B2B42200E878AB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D75B762C24B2B46B00E878AB /* SearchWorkerTests.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -582,6 +601,7 @@
 			files = (
 				D772505424ADA8DB00389097 /* MarketAPITests.swift in Sources */,
 				D718454D24A9673E000BD213 /* crispy_marketTests.swift in Sources */,
+				D75B762D24B2B46B00E878AB /* SearchWorkerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

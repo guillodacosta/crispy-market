@@ -14,7 +14,7 @@ import OHHTTPStubsSwift
 
 class MarketAPITests: XCTestCase {
     
-    private let apiClient = MarketAPI()
+    private let apiClient = MarketAPI(apiLog: MarketLogApiSpy())
 
     override func setUp() {
         super.setUp()
@@ -28,6 +28,13 @@ class MarketAPITests: XCTestCase {
         super.tearDown()
     }
 
+    // MARK: Test doubles
+    
+    class MarketLogApiSpy: MarketLogAPI {}
+    
+    
+    // MARK: Tests
+    
     func testParsesItemsProperlyGettingAllItems() {
         // Given
         stub(condition: isHost("api.mercadolibre.com")) { request in
@@ -112,7 +119,7 @@ class MarketAPITests: XCTestCase {
         }
 
         wait(for: [expectation], timeout: 3)
-        expect { result?.rawMessage }.to(equal("Houston hay problemas!"))
+        expect { result?.rawMessage }.to(equal("Houston we are in troubles!"))
     }
 
     private func assertFirstItemContainsExpectedValues(_ item: Items.FetchItems.ViewModel) {

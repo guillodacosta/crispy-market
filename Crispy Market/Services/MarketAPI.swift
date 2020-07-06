@@ -9,16 +9,16 @@
 import Foundation
 import Alamofire
 
-public class MarketAPI {
+public class MarketAPI: SearchProtocol {
     
     let apiLog: MarketLogAPI
     
     init(apiLog: MarketLogAPI) {
         self.apiLog = apiLog
     }
-}
 
-extension MarketAPI: SearchProtocol {
+    // MARK: SearchProtocol implementation
+
     func fetchItems(request: Items.FetchItems.Request, completionHandler: @escaping (Items.FetchItems.Response?, SearchError?) -> Void) {
         let params = [
             "q": request.query
